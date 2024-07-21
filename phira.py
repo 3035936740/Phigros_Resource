@@ -28,15 +28,15 @@ for id, info in infos.items():
     print(info["Name"], info["Composer"])
     for level in range(len(info["difficulty"])):
         with ZipFile("phira/%s/%s-%s.pez" % (levels[level], id, levels[level]), "x") as pez:
-            pez.writestr("info.txt", "#\nName: %s\nSong: %s.ogg\nPicture: %s.png\nChart: %s.json\nLevel: %s Lv.%s\nComposer: %s\nIllustrator: %s\nCharter: %s" % (info["Name"], id, id, id, levels[level], info["difficulty"][level], info["Composer"], info["Illustrator"], info["Chater"][level]))
-            
             chart_path = "Chart_%s/%s.0.json" % (levels[level], id)
-            music_path = "music/%s.ogg" % id
             ill_path = "IllustrationLowRes/%s.png" % id
+            music_path = "music/%s.ogg" % id
             
             if not any(os.path.exists(path) for path in {chart_path, music_path, ill_path}):
                 print(f'[{levels[level]}]"{id}" does not exist and has been skipped')
                 continue
+            
+            pez.writestr("info.txt", "#\nName: %s\nSong: %s.ogg\nPicture: %s.png\nChart: %s.json\nLevel: %s Lv.%s\nComposer: %s\nIllustrator: %s\nCharter: %s" % (info["Name"], id, id, id, levels[level], info["difficulty"][level], info["Composer"], info["Illustrator"], info["Chater"][level]))
             
             pez.write(chart_path, "%s.json" % id)
             pez.write(ill_path, "%s.png" % id)
