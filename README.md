@@ -11,6 +11,8 @@
 
 生成适配Phira的pez自制谱文件
 
+致谢: [static_void](https://github.com/yt6983138)
+
 **※ 注意事项: 请确保自己的Phigros是最新最热的,本项目并没有对旧版本的Phigros进行解析与处理**
 # 介绍
 
