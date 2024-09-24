@@ -2,8 +2,11 @@
 *.obb
 *.csv
 *.tsv
-*.txt
 *.json
+tips.txt
+avatar.txt
+illustration.txt
+single.txt
 temp/
 avatar/
 Chart_EZ/
