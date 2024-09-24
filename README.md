@@ -13,7 +13,13 @@
 
 致谢: [static_void](https://github.com/yt6983138)
 
-**※ 注意事项: 请确保自己的Phigros是最新最热的,本项目并没有对旧版本的Phigros进行解析与处理**
+**※ 注意事项: 请确保自己的Phigros是最新最热的,本项目并没有对旧版本的Phigros进行解析与处理**  
+
+# 安装依赖
+```bash
+pip install -r requirements.txt
+```  
+
 # 介绍
 
 `gameInformation.py`可从apk获取定数表，tips，收藏品id，头像id，曲id，曲名，曲师，画师，谱师
