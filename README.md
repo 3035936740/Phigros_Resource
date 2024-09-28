@@ -1,3 +1,4 @@
+# 文酱已恢复更新,请移步[Phigros_Resource](https://github.com/7aGiven/Phigros_Resource)
 # Phigros_Resource
 本项目可从Phigros的apk文件获取资源
 
